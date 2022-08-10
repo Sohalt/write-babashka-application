@@ -1,7 +1,7 @@
 {
   outputs = { ... }:
     {
-      overlay = final: prev: {
+      overlays.default = final: prev: {
         writeBabashkaApplication =
           { name
           , text
