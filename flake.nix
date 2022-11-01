@@ -14,7 +14,7 @@
           final.writeShellApplication {
             inherit name runtimeInputs;
             text = ''
-              ${final.babashka}/bin/bb ${script}
+              ${final.babashka}/bin/bb ${script} $@
             '';
             checkPhase = ''
               ${final.clj-kondo}/bin/clj-kondo ${script}
