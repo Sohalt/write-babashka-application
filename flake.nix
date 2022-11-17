@@ -1,6 +1,7 @@
 {
-  outputs = { ... }:
+  outputs = { self, ... }:
     {
+      overlay = self.overlays.default;
       overlays.default = final: prev: {
         writeBabashkaApplication =
           { name
