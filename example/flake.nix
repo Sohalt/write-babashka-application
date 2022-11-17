@@ -33,6 +33,8 @@
       };
     in {
       defaultApp = hello-babashka;
+      apps.default = { type = "app"; program = "${hello-babashka}/bin/hello"; };
       defaultPackage = hello-babashka;
+      packages.default = hello-babashka;
     });
 }
