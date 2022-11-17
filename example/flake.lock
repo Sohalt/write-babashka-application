@@ -1,0 +1,59 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1667395993,
+        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1668596599,
+        "narHash": "sha256-rhHyZTGI31/OfgYa9xF49UTchDXTI94pEsSNa0fOkpk=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "b457130e8a21608675ddf12c7d85227b22a27112",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "wbba": "wbba"
+      }
+    },
+    "wbba": {
+      "locked": {
+        "lastModified": 1668698970,
+        "narHash": "sha256-dYhzMhTeZAeI4s7iJbr/56SnunGV9L/TTPV6u7kh6U8=",
+        "owner": "sohalt",
+        "repo": "write-babashka-application",
+        "rev": "f37b285f3d1649f4895b956b8a240348c1595d36",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sohalt",
+        "repo": "write-babashka-application",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
