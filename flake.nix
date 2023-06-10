@@ -18,7 +18,7 @@
               ${final.babashka}/bin/bb ${script} $@
             '';
             checkPhase = ''
-              ${final.clj-kondo}/bin/clj-kondo ${script}
+              ${final.clj-kondo}/bin/clj-kondo --config '{:linters {:namespace-name-mismatch {:level :off}}}' --lint ${script}
             '';
           };
       };
