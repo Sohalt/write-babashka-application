@@ -1,10 +1,7 @@
 {
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   inputs.wbba.url = "github:sohalt/write-babashka-application";
-  inputs.flake-utils = {
-    url = "github:numtide/flake-utils";
-    inputs.nixpkgs.follows = "nixpkgs";
-  };
+  inputs.flake-utils.url = "github:numtide/flake-utils";
   outputs = {
     nixpkgs,
     flake-utils,
@@ -32,7 +29,6 @@
         '';
       };
     in {
-      defaultApp = hello-babashka;
       apps.default = { type = "app"; program = "${hello-babashka}/bin/hello"; };
       defaultPackage = hello-babashka;
       packages.default = hello-babashka;
